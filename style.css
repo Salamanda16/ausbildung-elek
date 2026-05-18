@@ -67,3 +67,43 @@ th{
 th, td{
     padding:12px;
 }
+
+/* AUTOMATISIERUNGSTECHNIK */
+
+.auto-list{
+    list-style:none;
+    padding:0;
+    margin-top:20px;
+}
+
+.auto-list li{
+    margin-bottom:18px;
+    font-size:18px;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    border:1px solid #eee;
+    transition:0.3s;
+    box-shadow:0 2px 8px rgba(0,0,0,0.03);
+}
+
+.auto-list li:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+#automatisierung p{
+    font-size:18px;
+    line-height:1.8;
+    color:#444;
+}
+
+#automatisierung .warnung-box{
+    margin-top:35px;
+    background:#fff3e0;
+    border:2px solid #ff9800;
+    padding:20px;
+    border-radius:12px;
+    font-weight:600;
+    font-size:17px;
+}
