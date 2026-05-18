@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elektriker Beruf erklärt</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f2f2f2;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#ff9800,#ff6f00);
+    color:white;
+    padding:50px 20px;
+    text-align:center;
+}
+
+header h1{
+    margin:0;
+    font-size:45px;
+}
+
+header p{
+    font-size:20px;
+}
+
+nav{
+    background:#222;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ff9800;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#ff9800;
+}
+
+ul{
+    padding-left:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+table, th, td{
+    border:1px solid #ccc;
+}
+
+th{
+    background:#ff9800;
+    color:white;
+}
+
+th, td{
+    padding:12px;
+    text-align:left;
+}
+
+.info{
+    background:#fff3cd;
+    padding:15px;
+    border-left:6px solid #ff9800;
+    margin-top:15px;
+}
+
+.warning{
+    background:#ffdddd;
+    padding:15px;
+    border-left:6px solid red;
+    margin-top:15px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Der Beruf Elektriker</h1>
+    <p>Alles was man über den Beruf wissen sollte</p>
+</header>
+
+<nav>
+    <a href="#beruf">Beruf</a>
+    <a href="#ausbildung">Ausbildung</a>
+    <a href="#aufgaben">Aufgaben</a>
+    <a href="#gehalt">Gehalt</a>
+    <a href="#wissen">Wissen</a>
+</nav>
+
+<div class="container">
+
+    <div class="card" id="beruf">
+        <h2>Was macht ein Elektriker?</h2>
+
+        <p>
+            Elektriker arbeiten mit Strom und elektrischen Anlagen. Sie sorgen dafür,
+            dass Häuser, Firmen und Maschinen mit Strom versorgt werden.
+            Außerdem reparieren sie elektrische Geräte und installieren neue Anlagen.
+        </p>
+
+        <p>
+            Ohne Elektriker würden Lampen, Steckdosen, Maschinen oder Computer nicht funktionieren.
+            Der Beruf ist deshalb sehr wichtig und wird überall gebraucht.
+        </p>
+
+        <div class="info">
+            💡 Elektriker arbeiten oft auf Baustellen, in Werkstätten oder direkt bei Kunden.
+        </div>
+    </div>
+
+    <div class="card" id="ausbildung">
+        <h2>Die Ausbildung</h2>
+
+        <p>
+            Die Ausbildung zum Elektriker heißt offiziell:
+        </p>
+
+        <h3>Elektroniker für Energie- und Gebäudetechnik</h3>
+
+        <p>
+            Die Ausbildung dauert normalerweise:
+        </p>
+
+        <h1 style="color:#ff9800;">3,5 Jahre</h1>
+
+        <p>
+            Während der Ausbildung arbeitet man in einem Betrieb und geht zusätzlich in die Berufsschule.
+        </p>
+
+        <h3>Das lernt man in der Ausbildung:</h3>
+
+        <ul>
+            <li>Kabel verlegen</li>
+            <li>Schaltpläne lesen</li>
+            <li>Strom messen</li>
+            <li>Steckdosen anschließen</li>
+            <li>Sicherheitsregeln</li>
+            <li>Fehler suchen und reparieren</li>
+            <li>Smarthome-Technik</li>
+        </ul>
+
+        <div class="warning">
+            ⚠ Arbeiten mit Strom können gefährlich sein. Deshalb spielt Sicherheit eine sehr große Rolle.
+        </div>
+    </div>
+
+    <div class="card" id="aufgaben">
+        <h2>Typische Aufgaben eines Elektrikers</h2>
+
+        <table>
+            <tr>
+                <th>Aufgabe</th>
+                <th>Beschreibung</th>
+            </tr>
+
+            <tr>
+                <td>Kabel verlegen</td>
+                <td>Leitungen in Häusern oder Firmen installieren</td>
+            </tr>
+
+            <tr>
+                <td>Steckdosen montieren</td>
+                <td>Steckdosen und Schalter anschließen</td>
+            </tr>
+
+            <tr>
+                <td>Fehler finden</td>
+                <td>Defekte Anlagen überprüfen und reparieren</td>
+            </tr>
+
+            <tr>
+                <td>Strom messen</td>
+                <td>Spannung und Widerstand kontrollieren</td>
+            </tr>
+
+            <tr>
+                <td>Photovoltaik</td>
+                <td>Solaranlagen installieren</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="card" id="gehalt">
+        <h2>Wie viel verdient ein Elektriker?</h2>
+
+        <p>
+            Das Gehalt hängt vom Bundesland, Betrieb und der Erfahrung ab.
+        </p>
+
+        <table>
+            <tr>
+                <th>Bereich</th>
+                <th>Durchschnitt</th>
+            </tr>
+
+            <tr>
+                <td>Ausbildung</td>
+                <td>ca. 900€ - 1.300€</td>
+            </tr>
+
+            <tr>
+                <td>Nach der Ausbildung</td>
+                <td>ca. 2.500€ - 3.500€</td>
+            </tr>
+
+            <tr>
+                <td>Mit Erfahrung</td>
+                <td>über 4.000€ möglich</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card" id="wissen">
+        <h2>Wichtige Grundlagen</h2>
+
+        <h3>Die 5 Sicherheitsregeln</h3>
+
+        <ol>
+            <li>Freischalten</li>
+            <li>Gegen Wiedereinschalten sichern</li>
+            <li>Spannungsfreiheit feststellen</li>
+            <li>Erden und kurzschließen</li>
+            <li>Benachbarte Teile abdecken</li>
+        </ol>
+
+        <h3>Wichtige Formeln</h3>
+
+        <p><strong>Ohmsches Gesetz:</strong></p>
+
+        
+::contentReference[oaicite:0]{index=0}
+
+
+        <p><strong>Leistung:</strong></p>
+
+        :contentReference[oaicite:1]{index=1}
+
+        <h3>Kabelfarben</h3>
+
+        <table>
+            <tr>
+                <th>Farbe</th>
+                <th>Bedeutung</th>
+            </tr>
+
+            <tr>
+                <td>Braun / Schwarz</td>
+                <td>Phase (Stromführend)</td>
+            </tr>
+
+            <tr>
+                <td>Blau</td>
+                <td>Neutralleiter</td>
+            </tr>
+
+            <tr>
+                <td>Grün-Gelb</td>
+                <td>Schutzleiter / Erdung</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Warum ist der Beruf wichtig?</h2>
+
+        <p>
+            Elektriker sorgen dafür, dass unser Alltag funktioniert.
+            Sie installieren Strom in Häusern, Schulen, Firmen und Fabriken.
+            Auch moderne Technik wie Solaranlagen, Wallboxen oder Smarthomes werden von Elektrikern aufgebaut.
+        </p>
+
+        <p>
+            Da immer mehr Technik genutzt wird, werden Elektriker auch in Zukunft sehr gebraucht.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Elektriker Informationsseite
+</footer>
+
+</body>
+</html>
