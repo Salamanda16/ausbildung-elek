@@ -3,115 +3,326 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elektriker Beruf erklärt</title>
+<title>Elektriker Wissen</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f2f2f2;
+    font-family:'Poppins',sans-serif;
+    background:#f5f5f5;
     color:#222;
-    line-height:1.6;
 }
 
-header{
-    background:linear-gradient(135deg,#ff9800,#ff6f00);
-    color:white;
-    padding:50px 20px;
-    text-align:center;
-}
-
-header h1{
-    margin:0;
-    font-size:45px;
-}
-
-header p{
-    font-size:20px;
-}
+/* NAVBAR */
 
 nav{
-    background:#222;
-    padding:15px;
-    text-align:center;
+    background:#0d0d0d;
+    color:white;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
     position:sticky;
     top:0;
+    z-index:1000;
 }
 
-nav a{
+.logo{
+    font-size:35px;
+    font-weight:700;
+    color:#ff9800;
+}
+
+.logo span{
+    display:block;
+    font-size:16px;
     color:white;
+    font-weight:300;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:40px;
+}
+
+nav ul li a{
     text-decoration:none;
-    margin:15px;
-    font-weight:bold;
+    color:white;
+    font-weight:600;
+    transition:0.3s;
 }
 
-nav a:hover{
+nav ul li a:hover{
     color:#ff9800;
 }
 
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    padding:20px;
+/* HERO */
+
+.hero{
+    height:500px;
+    background:linear-gradient(to right,#000000e8,#000000b0),
+    url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=2070&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:80px;
+    color:white;
 }
 
-.card{
-    background:white;
-    padding:25px;
-    margin-bottom:25px;
-    border-radius:12px;
-    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+.hero-content{
+    max-width:600px;
 }
 
-h2{
+.hero h1{
+    font-size:70px;
+    line-height:1.1;
+}
+
+.hero h1 span{
     color:#ff9800;
 }
 
-ul{
-    padding-left:20px;
+.hero p{
+    margin-top:25px;
+    font-size:22px;
+    line-height:1.7;
 }
 
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:15px;
+.buttons{
+    margin-top:35px;
 }
 
-table, th, td{
-    border:1px solid #ccc;
+.btn{
+    padding:15px 35px;
+    border:none;
+    border-radius:10px;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    margin-right:15px;
+    transition:0.3s;
 }
 
-th{
+.orange{
     background:#ff9800;
     color:white;
 }
 
-th, td{
-    padding:12px;
+.orange:hover{
+    background:#e68900;
+}
+
+.dark{
+    background:transparent;
+    border:2px solid white;
+    color:white;
+}
+
+.dark:hover{
+    background:white;
+    color:black;
+}
+
+/* INFO CARDS */
+
+.cards{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    margin-top:-70px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:35px 25px;
+    border-radius:18px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    text-align:center;
+}
+
+.card h3{
+    margin-top:20px;
+    font-size:24px;
+}
+
+.card p{
+    margin-top:15px;
+    color:#666;
+    line-height:1.7;
+}
+
+.icon{
+    width:80px;
+    height:80px;
+    background:#fff3e0;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    margin:auto;
+    color:#ff9800;
+}
+
+/* CONTENT */
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    margin-top:50px;
+}
+
+.section{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    margin-bottom:40px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.section h2{
+    color:#ff9800;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.section p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* TABLE */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:25px;
+}
+
+table th{
+    background:#ff9800;
+    color:white;
+    padding:18px;
     text-align:left;
 }
 
-.info{
-    background:#fff3cd;
-    padding:15px;
-    border-left:6px solid #ff9800;
-    margin-top:15px;
+table td{
+    padding:18px;
+    border:1px solid #ddd;
+    font-size:18px;
 }
 
-.warning{
-    background:#ffdddd;
-    padding:15px;
-    border-left:6px solid red;
-    margin-top:15px;
+/* GRUNDLAGEN */
+
+.grundlagen-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-top:30px;
 }
+
+.box{
+    background:#fafafa;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #eee;
+}
+
+.box h3{
+    margin-bottom:25px;
+    font-size:30px;
+}
+
+.sicherheitsliste li{
+    margin-bottom:18px;
+    font-size:19px;
+}
+
+.formel{
+    margin-bottom:30px;
+}
+
+.formel-box{
+    background:#fff8ef;
+    border:2px solid #ff9800;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    font-size:40px;
+    font-weight:bold;
+    color:#ff9800;
+    margin:15px 0;
+}
+
+.warnung-box{
+    background:#fff3e0;
+    border:2px solid #ff9800;
+    padding:18px;
+    border-radius:12px;
+    margin-top:25px;
+    font-weight:600;
+}
+
+.info-box{
+    background:#e3f2fd;
+    border:2px solid #64b5f6;
+    padding:18px;
+    border-radius:12px;
+    margin-top:25px;
+}
+
+/* FOOTER */
 
 footer{
-    background:#222;
+    background:#0d0d0d;
     color:white;
     text-align:center;
-    padding:25px;
+    padding:30px;
+    margin-top:50px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        padding:40px;
+        height:auto;
+    }
+
+    .hero h1{
+        font-size:50px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
 }
 
 </style>
@@ -119,114 +330,132 @@ footer{
 
 <body>
 
-<header>
-    <h1>Der Beruf Elektriker</h1>
-    <p>Alles was man über den Beruf wissen sollte</p>
-</header>
+<!-- NAVBAR -->
 
 <nav>
-    <a href="#beruf">Beruf</a>
-    <a href="#ausbildung">Ausbildung</a>
-    <a href="#aufgaben">Aufgaben</a>
-    <a href="#gehalt">Gehalt</a>
-    <a href="#wissen">Wissen</a>
+
+    <div class="logo">
+        ELEKTRIKER
+        <span>Der Beruf erklärt</span>
+    </div>
+
+    <ul>
+        <li><a href="#">START</a></li>
+        <li><a href="#beruf">BERUF</a></li>
+        <li><a href="#ausbildung">AUSBILDUNG</a></li>
+        <li><a href="#aufgaben">AUFGABEN</a></li>
+        <li><a href="#gehalt">GEHALT</a></li>
+        <li><a href="#wissen">WISSEN</a></li>
+    </ul>
+
 </nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Der Beruf<br><span>Elektriker</span></h1>
+
+        <p>
+            Elektriker sorgen dafür, dass unser Alltag mit Strom funktioniert.
+            Hier erfährst du alles über den Beruf – einfach erklärt.
+        </p>
+
+        <div class="buttons">
+            <button class="btn orange">Mehr erfahren</button>
+            <button class="btn dark">Überblick</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CARDS -->
+
+<div class="cards">
+
+    <div class="card">
+        <div class="icon">🎓</div>
+        <h3>Ausbildung</h3>
+        <p>Dauer, Inhalte und Voraussetzungen der Ausbildung.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🛠</div>
+        <h3>Aufgaben</h3>
+        <p>Typische Tätigkeiten und Bereiche eines Elektrikers.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">💰</div>
+        <h3>Gehalt</h3>
+        <p>Was verdient ein Elektriker in Ausbildung und Beruf?</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Wissen</h3>
+        <p>Wichtige Grundlagen, Formeln und Sicherheitsregeln.</p>
+    </div>
+
+</div>
+
+<!-- CONTENT -->
 
 <div class="container">
 
-    <div class="card" id="beruf">
+    <!-- BERUF -->
+
+    <div class="section" id="beruf">
+
         <h2>Was macht ein Elektriker?</h2>
 
         <p>
-            Elektriker arbeiten mit Strom und elektrischen Anlagen. Sie sorgen dafür,
-            dass Häuser, Firmen und Maschinen mit Strom versorgt werden.
-            Außerdem reparieren sie elektrische Geräte und installieren neue Anlagen.
+            Elektriker arbeiten mit Strom und elektrischen Anlagen.
+            Sie installieren Steckdosen, Lampen, Schaltschränke,
+            Solaranlagen und vieles mehr.
         </p>
+
+        <br>
 
         <p>
-            Ohne Elektriker würden Lampen, Steckdosen, Maschinen oder Computer nicht funktionieren.
-            Der Beruf ist deshalb sehr wichtig und wird überall gebraucht.
+            Außerdem reparieren sie Fehler und sorgen dafür,
+            dass Häuser, Firmen und Maschinen sicher funktionieren.
         </p>
 
-        <div class="info">
-            💡 Elektriker arbeiten oft auf Baustellen, in Werkstätten oder direkt bei Kunden.
-        </div>
     </div>
 
-    <div class="card" id="ausbildung">
+    <!-- AUSBILDUNG -->
+
+    <div class="section" id="ausbildung">
+
         <h2>Die Ausbildung</h2>
 
         <p>
-            Die Ausbildung zum Elektriker heißt offiziell:
+            Die Ausbildung heißt offiziell:
         </p>
 
-        <h3>Elektroniker für Energie- und Gebäudetechnik</h3>
+        <br>
+
+        <h1 style="color:#ff9800;">
+            Elektroniker für Energie- und Gebäudetechnik
+        </h1>
+
+        <br>
 
         <p>
-            Die Ausbildung dauert normalerweise:
+            Die Ausbildung dauert 3,5 Jahre und findet im Betrieb
+            und in der Berufsschule statt.
         </p>
 
-        <h1 style="color:#ff9800;">3,5 Jahre</h1>
-
-        <p>
-            Während der Ausbildung arbeitet man in einem Betrieb und geht zusätzlich in die Berufsschule.
-        </p>
-
-        <h3>Das lernt man in der Ausbildung:</h3>
-
-        <ul>
-            <li>Kabel verlegen</li>
-            <li>Schaltpläne lesen</li>
-            <li>Strom messen</li>
-            <li>Steckdosen anschließen</li>
-            <li>Sicherheitsregeln</li>
-            <li>Fehler suchen und reparieren</li>
-            <li>Smarthome-Technik</li>
-        </ul>
-
-        <div class="warning">
-            ⚠ Arbeiten mit Strom können gefährlich sein. Deshalb spielt Sicherheit eine sehr große Rolle.
-        </div>
     </div>
 
-    <div class="card" id="aufgaben">
-        <h2>Typische Aufgaben eines Elektrikers</h2>
+    <!-- GEHALT -->
 
-        <table>
-            <tr>
-                <th>Aufgabe</th>
-                <th>Beschreibung</th>
-            </tr>
+    <div class="section" id="gehalt">
 
-            <tr>
-                <td>Kabel verlegen</td>
-                <td>Leitungen in Häusern oder Firmen installieren</td>
-            </tr>
-
-            <tr>
-                <td>Steckdosen montieren</td>
-                <td>Steckdosen und Schalter anschließen</td>
-            </tr>
-
-            <tr>
-                <td>Fehler finden</td>
-                <td>Defekte Anlagen überprüfen und reparieren</td>
-            </tr>
-
-            <tr>
-                <td>Strom messen</td>
-                <td>Spannung und Widerstand kontrollieren</td>
-            </tr>
-
-            <tr>
-                <td>Photovoltaik</td>
-                <td>Solaranlagen installieren</td>
-            </tr>
-
-        </table>
-    </div>
-
-    <div class="card" id="gehalt">
         <h2>Wie viel verdient ein Elektriker?</h2>
 
         <p>
@@ -234,6 +463,7 @@ footer{
         </p>
 
         <table>
+
             <tr>
                 <th>Bereich</th>
                 <th>Durchschnitt</th>
@@ -241,89 +471,141 @@ footer{
 
             <tr>
                 <td>Ausbildung</td>
-                <td>ca. 900€ - 1.300€</td>
+                <td>ca. 700€ - 1.000€</td>
             </tr>
 
             <tr>
                 <td>Nach der Ausbildung</td>
-                <td>ca. 2.500€ - 3.500€</td>
+                <td>ca. 1.500€ - 2.500€</td>
             </tr>
 
             <tr>
                 <td>Mit Erfahrung</td>
-                <td>über 4.000€ möglich</td>
+                <td>über 3.000€ möglich</td>
             </tr>
+
         </table>
+
     </div>
 
-    <div class="card" id="wissen">
+    <!-- WISSEN -->
+
+    <div class="section" id="wissen">
+
         <h2>Wichtige Grundlagen</h2>
 
-        <h3>Die 5 Sicherheitsregeln</h3>
+        <div class="grundlagen-grid">
 
-        <ol>
-            <li>Freischalten</li>
-            <li>Gegen Wiedereinschalten sichern</li>
-            <li>Spannungsfreiheit feststellen</li>
-            <li>Erden und kurzschließen</li>
-            <li>Benachbarte Teile abdecken</li>
-        </ol>
+            <!-- SICHERHEIT -->
 
-        <h3>Wichtige Formeln</h3>
+            <div class="box">
 
-        <p><strong>Ohmsches Gesetz:</strong></p>
+                <h3>Die 5 Sicherheitsregeln</h3>
 
-        
-::contentReference[oaicite:0]{index=0}
+                <ol class="sicherheitsliste">
+                    <li>Freischalten</li>
+                    <li>Gegen Wiedereinschalten sichern</li>
+                    <li>Spannungsfreiheit feststellen</li>
+                    <li>Erden und kurzschließen</li>
+                    <li>Benachbarte Teile abdecken</li>
+                </ol>
 
+                <div class="warnung-box">
+                    ⚠ Arbeiten mit Strom können lebensgefährlich sein.
+                </div>
 
-        <p><strong>Leistung:</strong></p>
+            </div>
 
-        :contentReference[oaicite:1]{index=1}
+            <!-- FORMELN -->
 
-        <h3>Kabelfarben</h3>
+            <div class="box">
 
-        <table>
-            <tr>
-                <th>Farbe</th>
-                <th>Bedeutung</th>
-            </tr>
+                <h3>Wichtige Formeln</h3>
 
-            <tr>
-                <td>Braun / Schwarz</td>
-                <td>Phase (Stromführend)</td>
-            </tr>
+                <div class="formel">
 
-            <tr>
-                <td>Blau</td>
-                <td>Neutralleiter</td>
-            </tr>
+                    <h4>Ohmsches Gesetz</h4>
 
-            <tr>
-                <td>Grün-Gelb</td>
-                <td>Schutzleiter / Erdung</td>
-            </tr>
-        </table>
-    </div>
+                    <div class="formel-box">
+                        U = R · I
+                    </div>
 
-    <div class="card">
-        <h2>Warum ist der Beruf wichtig?</h2>
+                    <p>Spannung = Widerstand × Stromstärke</p>
 
-        <p>
-            Elektriker sorgen dafür, dass unser Alltag funktioniert.
-            Sie installieren Strom in Häusern, Schulen, Firmen und Fabriken.
-            Auch moderne Technik wie Solaranlagen, Wallboxen oder Smarthomes werden von Elektrikern aufgebaut.
-        </p>
+                </div>
 
-        <p>
-            Da immer mehr Technik genutzt wird, werden Elektriker auch in Zukunft sehr gebraucht.
-        </p>
+                <div class="formel">
+
+                    <h4>Leistung</h4>
+
+                    <div class="formel-box">
+                        P = U · I
+                    </div>
+
+                    <p>Leistung = Spannung × Stromstärke</p>
+
+                </div>
+
+                <div class="formel">
+
+                    <h4>Widerstand</h4>
+
+                    <div class="formel-box">
+                        R = U / I
+                    </div>
+
+                    <p>Widerstand = Spannung / Stromstärke</p>
+
+                </div>
+
+            </div>
+
+            <!-- KABEL -->
+
+            <div class="box">
+
+                <h3>Kabelfarben</h3>
+
+                <table>
+
+                    <tr>
+                        <th>Farbe</th>
+                        <th>Bedeutung</th>
+                    </tr>
+
+                    <tr>
+                        <td>Braun / Schwarz / Grau</td>
+                        <td>Phase (L)</td>
+                    </tr>
+
+                    <tr>
+                        <td>Blau</td>
+                        <td>Neutralleiter (N)</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grün-Gelb</td>
+                        <td>Schutzleiter (PE)</td>
+                    </tr>
+
+                </table>
+
+                <div class="info-box">
+                    ℹ Diese Farben sind in Deutschland standardisiert.
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
 </div>
 
+<!-- FOOTER -->
+
 <footer>
-    © 2026 Elektriker Informationsseite
+    © 2026 Elektriker Wissen – Alle Rechte vorbehalten.
 </footer>
 
 </body>
